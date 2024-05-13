@@ -27,7 +27,7 @@ const main = (rl) => {
       resolve();
     });
     const nameOfTheMonthBasedOnNumber = (number) => {
-      return months[number];
+      return months[number] || "Numero de mes no valido";
     };
   });
 };

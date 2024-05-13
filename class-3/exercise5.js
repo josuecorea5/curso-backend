@@ -9,27 +9,29 @@ const main = (rl) => {
   return new Promise((resolve, reject) => {
     rl.question("Ingrese el primer color: ", (color1) => {
       rl.question("Ingrese el segundo color: ", (color2) => {
-        console.log(mixOfPrimaryColors(color1, color2));
+        console.log(
+          mixOfPrimaryColors(color1.toLowerCase(), color2.toLowerCase())
+        );
         resolve();
       });
     });
 
     const mixOfPrimaryColors = (color1, color2) => {
       if (
-        (color1 === "Azul" && color2 === "Amarillo") ||
-        (color1 === "Amarillo" && color2 === "Azul")
+        (color1 === "azul" && color2 === "amarillo") ||
+        (color1 === "amarillo" && color2 === "azul")
       ) {
-        return "Verde";
+        return "verde";
       } else if (
-        (color1 === "Azul" && color2 === "Rojo") ||
-        (color1 === "Rojo" && color2 === "Azul")
+        (color1 === "azul" && color2 === "rojo") ||
+        (color1 === "rojo" && color2 === "azul")
       ) {
-        return "Morado";
+        return "morado";
       } else if (
-        (color1 === "Rojo" && color2 === "Amarillo") ||
-        (color1 === "Amarillo" && color2 === "Rojo")
+        (color1 === "rojo" && color2 === "amarillo") ||
+        (color1 === "amarillo" && color2 === "rojo")
       ) {
-        return "Naranja";
+        return "naranja";
       } else {
         return "Error";
       }

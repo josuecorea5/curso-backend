@@ -22,36 +22,43 @@ const main = () => {
     switch (Number(number)) {
       case 1:
         exercise1(rl).then(() => {
+          console.log("--------------------");
           main();
         });
         break;
       case 2:
         exercise2(rl).then(() => {
+          console.log("--------------------");
           main();
         });
         break;
       case 3:
         exercise3(rl).then(() => {
+          console.log("--------------------");
           main();
         });
         break;
       case 4:
         exercise4(rl).then(() => {
+          console.log("--------------------");
           main();
         });
         break;
       case 5:
         exercise5(rl).then(() => {
+          console.log("--------------------");
           main();
         });
         break;
       case 6:
         exercise6(rl).then(() => {
+          console.log("--------------------");
           main();
         });
         break;
       case 7:
         exercise7(rl).then(() => {
+          console.log("--------------------");
           main();
         });
         break;
